@@ -65,10 +65,7 @@ static const char* cipher_suites = nullptr;
 // All cipher suites for default are compliant with HTTP2.
 GPR_GLOBAL_CONFIG_DEFINE_STRING(
     grpc_ssl_cipher_suites,
-    "ECDHE-ECDSA-AES128-GCM-SHA256:"
-    "ECDHE-ECDSA-AES256-GCM-SHA384:"
-    "ECDHE-RSA-AES128-GCM-SHA256:"
-    "ECDHE-RSA-AES256-GCM-SHA384",
+    "GOST2012(256)-GOST89-GOST89",
     "A colon separated list of cipher suites to use with OpenSSL")
 
 static void init_cipher_suites(void) {
